@@ -1,0 +1,15 @@
+{% extends "body.html" %}
+
+{% block content %}
+    <ol>
+        {% for link in object_list %}
+        <li>
+            <a href = "{{ link.url }}">
+                <b>{{ link.title }}</b>
+            </a>
+            <span> with v</span>
+        </li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}
